@@ -20,7 +20,6 @@ for data in graph_data:
 source_node ='@EgyIndependent' # Specify the source node for path analysis
 target_node = "@TourismandAntiq"  # Specify the target node for path analysis
 try:
-    paths = nx.all_simple_paths(graph, source=source_node, target=target_node)
     path = nx.shortest_path(graph, source=source_node, target=target_node)
     # print(path)
     subGraph = nx.Graph()
